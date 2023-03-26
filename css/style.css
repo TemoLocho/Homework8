@@ -1,15 +1,37 @@
-.box{
+.box {
     width: 200px;
     height: 200px;
     margin: 200px auto;
-    border: 2px solid yellow;
     background-color: yellow;
     box-shadow: 10px 15px red;
     transition-property: all;
     transition-duration: 2s;
 }
 
-.box:hover{
+.box:hover {
     transform: scale(2);
     box-shadow: 10px 15px 15px red;
 }
+
+.circle {
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    background-color: yellow;
+    border-radius: 50%;
+    animation-name: vanish;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes vanish {
+
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
